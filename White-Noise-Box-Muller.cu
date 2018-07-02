@@ -49,14 +49,6 @@ __global__ void addWhiteNoise(float *Img, float *randList, const int imgWidth, c
     }
 }
 
-// test
-int main(int argc, char **argv){
-    string filePath = "00001.jpg";
-    Mat Img = (float)imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
-    dim3 block(32, 32);
-    dim3 grid((Img.cols + block.x - 1) / block.x, (Img.rows / 2 + block.y - 1) / block.y);
-    float
-    return 0;
-}
+
 
 
